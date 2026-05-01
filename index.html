@@ -280,26 +280,31 @@ nav {
 .spt-pill { display:inline-flex; align-items:center; gap:6px; background:var(--spotify); color:#fff; font-size:0.73rem; font-weight:700; padding:0.45rem 1rem; border-radius:100px; text-decoration:none; transition:all 0.3s; }
 .spt-pill:hover { opacity:0.9; transform:scale(1.02); }
 .spt-pill svg { width:13px; height:13px; flex-shrink:0; }
-.pod-eps { 
-  margin-top: 20px; 
-  width: 100%; 
-  max-height: 480px; 
-  overflow-y: auto; 
-  display: flex; 
-  flex-direction: column; 
-  gap: 0.8rem; 
-  padding-right: 6px;
+ /* Perbaikan bagian podcast - rapihkan padding dan tombol */
+.pod-eps {
+    padding: 1rem 0 !important;   /* kurangi padding vertikal */
+    margin: 0 !important;
 }
-.pod-eps::-webkit-scrollbar {
-  width: 4px;
+.pod-eps a {
+    display: inline-flex !important;   /* jangan full-width */
+    width: auto !important;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #1DB954;
+    padding: 10px 24px !important;     /* lebih kompak */
+    border-radius: 100px;
+    font-size: 0.9rem;
+    gap: 8px;
 }
-.pod-eps::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0.05);
-  border-radius: 4px;
+.pod-eps p {
+    margin-top: 0.75rem !important;
+    margin-bottom: 0 !important;
+    font-size: 0.75rem;
 }
-.pod-eps::-webkit-scrollbar-thumb {
-  background: var(--pop2);
-  border-radius: 4px;
+.pod-foot {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-top: 0;
 }
 .pod-foot { padding:1rem 1.5rem; border-top:1px solid rgba(255,255,255,0.07); display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap; }
 .plat-link { font-size:0.72rem; padding:0.25rem 0.7rem; border-radius:100px; border:1px solid rgba(255,255,255,0.12); color:rgba(255,255,255,0.45); text-decoration:none; transition:all 0.3s; }
