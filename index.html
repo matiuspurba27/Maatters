@@ -273,8 +273,7 @@ nav {
 .podcast .sec-label { color:var(--pop3); }
 .podcast .sec-title { color:#fff; }
 .podcast .sec-desc { color:rgba(255,255,255,0.5); }
-.pod-card { height: auto !important; min-height: 500px; padding-bottom: 20px; border-radius:24px; background:rgba(255,255,255,0.03); }
-.pod-head { display:flex; justify-content:space-between; align-items:center; padding:1.25rem 1.5rem; border-bottom:1px solid rgba(255,255,255,0.08); }
+.pod-card { height: auto !important; min-height: auto; padding: 1rem 0; border-radius:24px; background:rgba(255,255,255,0.03); } .pod-head { display:flex; justify-content:space-between; align-items:center; padding:1.25rem 1.5rem; border-bottom:1px solid rgba(255,255,255,0.08); }
 .pod-name { font-family:'Anybody',sans-serif; font-weight:900; font-style:italic; font-size:1.1rem; color:#fff; }
 .pod-count { font-size:0.72rem; color:rgba(255,255,255,0.3); margin-top:3px; }
 .spt-pill { display:inline-flex; align-items:center; gap:6px; background:var(--spotify); color:#fff; font-size:0.73rem; font-weight:700; padding:0.45rem 1rem; border-radius:100px; text-decoration:none; transition:all 0.3s; }
@@ -991,32 +990,22 @@ footer span {
   <div class="inner">
     <div class="sec-label">Audio</div>
     <h2 class="sec-title">Podcast</h2>
-    <p class="sec-desc">Ini mah obrolan-obrolan gua bareng temen gua. Lucu sih udah pasti, penting mah kayanya kaga si</p>
-    <div class="pod-card">
-      <div class="pod-head">
-        <div>
-          <div class="pod-name">Asal Take Podcast</div>
-          <div class="pod-count">Tayang tiap Senin</div>
-        </div>
-      </div>
-      <div class="pod-eps" style="text-align: center; padding: 1.5rem;">
-        <a href="https://open.spotify.com/show/2ZCMrOnXnIu4B5X380uYoL" target="_blank" 
-           style="display: inline-flex; align-items: center; gap: 12px; 
-                  background: #1DB954; color: white; padding: 12px 28px; 
-                  border-radius: 100px; text-decoration: none; font-weight: 700;
-                  transition: transform 0.2s;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424a.622.622 0 01-.857.207c-2.348-1.435-5.304-1.76-8.785-.964a.622.622 0 11-.277-1.215c3.809-.87 7.076-.496 9.712 1.115a.622.622 0 01.207.857zm1.223-2.722a.779.779 0 01-1.072.257c-2.687-1.652-6.785-2.131-9.965-1.166a.779.779 0 01-.97-.519.779.779 0 01.519-.97c3.632-1.102 8.147-.568 11.233 1.326a.779.779 0 01.255 1.072zm.105-2.835C14.692 8.95 9.375 8.775 6.297 9.71a.935.935 0 11-.543-1.79c3.532-1.072 9.404-.865 13.115 1.338a.935.935 0 01-.955 1.609z"/>
-          </svg>
-          Dengarkan di Spotify
-        </a>
-        <p style="margin-top: 1rem; color: rgba(255,255,255,0.5); font-size: 0.75rem;">
-          Episode baru setiap Senin. Klik tombol di atas untuk mendengarkan semua episode.
-        </p>
-      </div>
-      <div class="pod-foot">
-        <span class="pod-foot-label">Ada juga</span>
-        <a href="#" class="plat-link">YouTube</a>
+    <p class="sec-desc" style="color: rgba(255,255,255,0.7);">Ini mah obrolan-obrolan gua bareng temen gua. Lucu sih udah pasti, penting mah kayanya kaga si</p>
+    <div class="pod-card" style="text-align: center; padding: 1.2rem; background: rgba(255,255,255,0.03); border-radius: 24px;">
+      <div class="pod-name" style="font-size: 1.2rem; margin-bottom: 0.25rem; color: #fff;">Asal Take Podcast</div>
+      <div class="pod-count" style="margin-bottom: 1rem; color: rgba(255,255,255,0.6);">Tayang tiap Senin. Karna kalo sayang tiap senin itu aku</div>
+      <a href="https://open.spotify.com/show/2ZCMrOnXnIu4B5X380uYoL" target="_blank" 
+         style="display: inline-flex; align-items: center; gap: 8px; 
+                background: #1DB954; color: white; padding: 8px 20px; 
+                border-radius: 100px; text-decoration: none; font-weight: 600;
+                font-size: 0.85rem;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424a.622.622 0 01-.857.207c-2.348-1.435-5.304-1.76-8.785-.964a.622.622 0 11-.277-1.215c3.809-.87 7.076-.496 9.712 1.115a.622.622 0 01.207.857zm1.223-2.722a.779.779 0 01-1.072.257c-2.687-1.652-6.785-2.131-9.965-1.166a.779.779 0 01-.97-.519.779.779 0 01.519-.97c3.632-1.102 8.147-.568 11.233 1.326a.779.779 0 01.255 1.072zm.105-2.835C14.692 8.95 9.375 8.775 6.297 9.71a.935.935 0 11-.543-1.79c3.532-1.072 9.404-.865 13.115 1.338a.935.935 0 01-.955 1.609z"/>
+        </svg>
+        Dengarkan di Spotify
+      </a>
+      <div style="margin-top: 0.75rem; font-size: 0.7rem; color: rgba(255,255,255,0.45);">
+        Udah lebih dari 15231 Episode. Dengarkan aja makanya.
       </div>
     </div>
   </div>
